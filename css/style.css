@@ -155,7 +155,7 @@ video{
     position: absolute;
     top: 50px;
     left: 0;
-    background-color: rgba(0,121,107,.97);
+    background-color: #0e80de;
     color: #fff;
     z-index: 99999;
     border-top: 1px solid rgba(255,255,255,.5);
