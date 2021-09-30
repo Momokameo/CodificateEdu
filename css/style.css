@@ -64,6 +64,9 @@ video{
     vertical-align: middle;
 }
 /*************** Estilos del header y nav ***************/
+#navHead{
+    background-color: #0b3a5e;
+}
 #codyeduHead{
     font-family: "Times New Roman";
     size: auto;
@@ -456,7 +459,7 @@ video{
         width: 100%;
         position: absolute;
         top: 50px;
-        background-color: #00796b;
+        background-color: #0e80de;
         border-top: 1px solid rgba(255,255,255,.2);
         pointer-events: none;
         opacity: 0;
