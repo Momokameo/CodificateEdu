@@ -6,7 +6,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Lato', sans-serif;;
     font-size: 16px;
     background-color: #fff;
     position: relative;
@@ -30,7 +30,7 @@ video{
     background-attachment: fixed;
 }
 .titles{
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Lato', sans-serif;;
 }
 .center-box{
     margin: 0 auto;
@@ -43,7 +43,7 @@ video{
     background: transparent;
     width: 29px;
     height: auto;
-    color: #0b3a5e;
+    color: #0A50C9;
     line-height: 25px;
     font-size: 30px;
     text-align: center;
@@ -57,7 +57,7 @@ video{
     height: 1px;
     margin: 0;
     padding: 0;
-    background-color: #0b3a5e;
+    background-color: #59989E;
 }
 .table > tbody > tr > td,
 .table > thead > tr > th{
@@ -65,7 +65,7 @@ video{
 }
 /*************** Estilos del header y nav ***************/
 #navHead{
-    background-color: #0b3a5e;
+    background-color: #7AB8E6;
 }
 #codyeduHead{
     font-family: "Times New Roman";
@@ -76,7 +76,7 @@ video{
     size: auto;
 }
 .header{
-    background-color: #0e80de;
+    background-color: #7AB8E6;
     height: 50px;
     color: #fff;
     position: relative;
@@ -115,7 +115,7 @@ video{
 .navigation ul li a{
     position: relative;
     text-align: center;
-    color: #fff;
+    color: #FFFFFF;
     height: 50px;
     width: 100%;
     line-height: 50px;
@@ -134,7 +134,7 @@ video{
     text-decoration: none;
 }
 .navigation ul li a:hover{
-    color: #F0F4C3;
+    color: #0A50C9;
     text-decoration: none;
 }
 .button-menu-mobile{
@@ -158,7 +158,7 @@ video{
     position: absolute;
     top: 50px;
     left: 0;
-    background-color: #0e80de;
+    background-color: #7AB8E6;
     color: #fff;
     z-index: 99999;
     border-top: 1px solid rgba(255,255,255,.5);
@@ -168,7 +168,7 @@ video{
     transition: .4s all ease-in-out;
 }
 .mega-menu span{
-    color: #F0F4C3;
+    color: #0A50C9;
 }
 .mega-menu ul{
     padding: 10px 0 0 0;
@@ -191,7 +191,7 @@ video{
 }
 .mega-menu ul li a:hover{
     text-decoration: none;
-    color: #FFA726;
+    color: #0A50C9;
 }
 .mega-menu ul li a:active,
 .mega-menu ul li a:focus{
@@ -202,6 +202,7 @@ video{
     opacity: 1;
     height: auto !important;
     pointer-events: auto;
+    
 }
 .close-mega-menu{
     color: #fff !important;
@@ -214,7 +215,7 @@ video{
 .footer{ 
     clear:both;
     color: #fff;
-    background-color: #0e80de;
+    background-color: #59989E;
     position: relative;
     height: auto;
 }
@@ -233,18 +234,24 @@ video{
     color: #fff;
 }
 .links-footer li a:hover{
-    color: #FFCA28;
+    color: #0A50C9;
     text-decoration: none;
 }
 .links-footer li a:active,
 .links-footer li a:focus{
     outline: none;
     text-decoration: none;
-    color: #FFCA28;
+    color: #0A50C9;
 }
 /*=======================================================================================================
 =                                              Estilos index                                            =
 ========================================================================================================*/
+.lead{
+     color: #AFAFAF;
+}
+.text-center{
+    color: #0A50C9
+}
 .Logo-Ins-Index img{
     height: 100px;
     margin: 15px auto;
@@ -263,7 +270,10 @@ video{
 #logoIndex{
     height: 200px
 }
-/************** Sitios de la institución ***************/
+/************** Nosotros ***************/
+.page-header{
+    color: #1E00BC;
+}
 .important-links-index{
     background-color: #F7F7F7; 
     padding: 60px 0;
@@ -563,4 +573,13 @@ video{
     .logo{
         width: 40%;
     } 
+}
+/*=======================================================================================================
+=                                      Login                                                  =
+========================================================================================================*/
+
+.formularioBTN{
+    background-color: #0A50C9;
+    border-color: #3569bb;
+    color: black;
 }

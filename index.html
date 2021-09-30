@@ -27,7 +27,7 @@
 			<span class="hidden-xs hidden-sm" ID="codyeduHead">CODYEDU</span>
 		</div>
 		<!--======================================== Links de navegación ========================================-->
-		<nav class="full-reset navigation">
+		<nav class="full-reset navigation" id="navHead">
 			<ul class="full-reset list-unstyled">
 				<li><a href="index.html">Inicio</a></li>
 				<li><a href="nosotros.html">Nosotros</a></li>
@@ -72,7 +72,7 @@
 			<i class="fa fa-times-circle btm-mega-menu close-mega-menu fa-2x"></i>
 		</div>-->
 		<!--======================================== Boton menu mobil ========================================-->
-		<a href="#" class=" hidden-sm hidden-md hidden-lg pull-right button-menu-mobile show-close-menu-m"><i class="fa fa-ellipsis-v"></i></a>
+		<a  href="#" class=" hidden-sm hidden-md hidden-lg pull-right button-menu-mobile show-close-menu-m"><i class="fa fa-ellipsis-v" style="color: #0A50C9"></i></a>
 	</header>
 	<!--======================================== Logo & Lema ========================================-->
 	<section class="full-reset font-cover" style="background-image: url(assets/img/font-index3.jpg);">
@@ -90,13 +90,13 @@
 	<!--======================================== Video corto & carrusel========================================-->
 	<section class="full-reset" style="background-color: rgb(242, 242, 242); padding: 40px 0;">
 		<div class="container">
-			<h2 class="text-center titles">Temas disponibles</h2>
+			<h2 class="text-center titles" style="color: #1E00BC">Temas disponibles</h2>
 			<br><br>
 			<!--======================================== Carrusel ========================================-->
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-sm-push-6">
 					<h3 class="text-center titles">Temas</h3>
-					<p class="lead">Estas imagenes son una muestra del tipo de actividades que hay disponibles.
+					<p class="lead" style="color: #AFAFAF">Estas imagenes son una muestra del tipo de actividades que hay disponibles.
 					</p>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-sm-pull-6">
@@ -106,6 +106,7 @@
 					    <li data-target="#slider-ins" data-slide-to="0" class="active"></li>
 					    <li data-target="#slider-ins" data-slide-to="1"></li>
 					    <li data-target="#slider-ins" data-slide-to="2"></li>
+						  <li data-target="#slider-ins" data-slide-to="3"></li>
 					  </ol>
 
 					  <!-- Imagenes -->
@@ -186,7 +187,8 @@
 				      <img src="assets/gallery/default.png" alt="IMG" class="img-responsive img-rounded">
 				      <div class="caption">
 				        <h3 class="text-center">Oraciones</h3>
-				        <p class="text-justify">Este tema trata de ....</p>
+				        <p class="text-justify">Este tema trata de pequeños mensajes en los que un predicado informa
+							acerca de un sujeto delimitado por signos de puntuación.</p>
 				        <p class="text-center"><a href="actividades.html#b-nivel1" class="btn btn-primary" role="button">Ver nivel</a></p>
 				      </div>
 				    </div>
@@ -197,7 +199,8 @@
 				      <img src="assets/gallery/default.png" alt="IMG" class="img-responsive img-rounded">
 				      <div class="caption">
 				        <h3 class="text-center">Rimas</h3>
-				        <p class="text-justify">Este tema trata de ....</p>
+				        <p class="text-justify">Este tema trata de semejanzas o igualdad de sonidos entre dos o más palabras
+							a partir de las últimas sílabas en un conjunto de palabras.</p>
 				        <p class="text-center"><a href="actividades.html#b-nivel2" class="btn btn-primary" role="button">Ver nivel</a></p>
 				      </div>
 				    </div>
@@ -208,7 +211,8 @@
 				      <img src="assets/gallery/default.png" alt="IMG" class="img-responsive img-rounded">
 				      <div class="caption">
 				        <h3 class="text-center">Signos de admiracion e interrogacion</h3>
-				        <p class="text-justify">Este tema trata de ....</p>
+				        <p class="text-justify">Este tema trata de signos usados en oraciones para representar preguntas o
+							indicar que se alzó la voz y enfatizar la frase.</p>
 				        <p class="text-center"><a href="actividades.html#b-nivel3" class="btn btn-primary" role="button">Ver nivel</a></p>
 				      </div>
 				    </div>
@@ -219,7 +223,8 @@
 						<img src="assets/gallery/default.png" alt="IMG" class="img-responsive img-rounded">
 						<div class="caption">
 							<h3 class="text-center">Unir palabras</h3>
-							<p class="text-justify">Este tema trata de ....</p>
+							<p class="text-justify">Este tema trata de la asociacion de palabras u oraciones con imágenes que tengan
+								una relacion entre si entre las opciones dadas.</p>
 							<p class="text-center"><a href="actividades.html#b-nivel3" class="btn btn-primary" role="button">Ver nivel</a></p>
 						</div>
 					</div>
@@ -264,22 +269,24 @@
 		<div class="full-reset" style="padding: 15px 0;">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-4">
-						<!--<h4 class="titles text-center">Visitenos en</h4>
-						<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+					<div class="col-xs-12 col-sm-4" style="text-align: center;">
+						<h4 class="titles subtitles-footer">Tambien puedes visitar:</h4>
+						<ul class="list-unstyled links-footer" >
+							<li style="text-align: center"><a href="https://dionisiosatiro.github.io/4IV8_Proyecto_Aula_Equipo6_Codyrep/" class="open-link-newTab"><i class="fa fa-github"></i> &nbsp; CODYREP</a></li>
+							</ul>
 					</div>
 					<div class="col-xs-12 col-sm-4">
-						<h4 class="titles text-center">Contactenos</h4>
-						<p class="text-center">Correo Electrónico: correo@gmail.com</p>
+						<h4 class="titles text-center" style="color: white">Contactenos</h4>
+						<p class="text-center" style="color: white">Correo Electrónico: codificate32@gmail.com</p>
 					</div>
-					<!--<div class="col-xs-12 col-sm-4">
+					<div class="col-xs-12 col-sm-4" >
 						<h4 class="titles subtitles-footer">Siguenos en</h4>
 						<ul class="list-unstyled links-footer">
-							<li><a href="#!" class="open-link-newTab"><i class="fa fa-facebook"></i> &nbsp; Facebook</a></li>
-							<li><a href="#!" class="open-link-newTab"><i class="fa fa-twitter"></i> &nbsp; Twitter</a></li>
-							<li><a href="#!" class="open-link-newTab"><i class="fa fa-google-plus"></i> &nbsp; Google+</a></li>
+							<li><a href="https://m.facebook.com/profile.php?id=100069448171792" class="open-link-newTab"><i class="fa fa-facebook"></i> &nbsp; Facebook</a></li>
+							<li><a href="https://twitter.com/Codificate2" class="open-link-newTab"><i class="fa fa-twitter"></i> &nbsp; Twitter</a></li>
+							<li><a href="https://instagram.com/codificate32?utm_medium=copy_link" class="open-link-newTab"><i class="fa fa-instagram"></i> &nbsp; Instagram</a></li>
 						</ul>
-					</div>-->
+					</div>
 					<div class="col-xs-12">
 						<div class="full-reset footer-copyright"><i class="fa fa-copyright"></i>Codificate 2021</div>
 					</div>
