@@ -43,7 +43,7 @@ video{
     background: transparent;
     width: 29px;
     height: auto;
-    color: #00897B;;
+    color: #0b3a5e;
     line-height: 25px;
     font-size: 30px;
     text-align: center;
@@ -57,15 +57,23 @@ video{
     height: 1px;
     margin: 0;
     padding: 0;
-    background-color: #EFCDCD;
+    background-color: #0b3a5e;
 }
 .table > tbody > tr > td,
 .table > thead > tr > th{
     vertical-align: middle;
 }
 /*************** Estilos del header y nav ***************/
+#codyeduHead{
+    font-family: codyeduHead;
+    size: auto;
+}
+#codyeduHeadS{
+    font-family: codyeduHead;
+    size: auto;
+}
 .header{
-    background-color: #00796b;
+    background-color: #0e80de;
     height: 50px;
     color: #fff;
     position: relative;
@@ -203,7 +211,7 @@ video{
 .footer{ 
     clear:both;
     color: #fff;
-    background-color: #00796b;
+    background-color: #0e80de;
     position: relative;
     height: auto;
 }
@@ -249,6 +257,9 @@ video{
     text-align: center;
     color: #B0B0B0;
 }
+#logoIndex{
+    height: 200px
+}
 /************** Sitios de la institución ***************/
 .important-links-index{
     background-color: #F7F7F7; 
@@ -272,8 +283,8 @@ video{
 }
 .important-links-index a:hover{
     text-decoration: none;
-    background-color: #2E7D32;
-    border: 1px solid #F57C00;
+    background-color: #0e80de;
+    border: 1px solid #0b3a5e;
     transform: scale(1.2);
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -328,7 +339,7 @@ video{
     top: 0;
     right: 0;
     width: 270px;
-    border-left: 1px solid #EFCDCD;
+    border-left: 1px solid #0b3a5e;
     background-color: #F8F8F8;
 }
 .scroll-navigation-ins ul li{
@@ -389,7 +400,7 @@ video{
     border-radius: 5px;
     padding: 10px;
     background-color: #F7F7F7;
-    border: 1px dashed #EFCDCD;
+    border: 1px dashed #0e80de;
     margin: 10px 0;
 }
 .tile-gallery img{
