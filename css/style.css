@@ -24,7 +24,7 @@ video{
 }
 .font-cover{
     background-color: #fff;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -65,11 +65,11 @@ video{
 }
 /*************** Estilos del header y nav ***************/
 #codyeduHead{
-    font-family: codyeduHead;
+    font-family: "Times New Roman";
     size: auto;
 }
 #codyeduHeadS{
-    font-family: codyeduHead;
+    font-family: "Times New Roman";
     size: auto;
 }
 .header{
