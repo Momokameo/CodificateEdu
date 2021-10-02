@@ -64,6 +64,9 @@ video{
     vertical-align: middle;
 }
 /*************** Estilos del header y nav ***************/
+.navList{
+    color: white;
+}
 #navHead{
     background-color: #7AB8E6;
 }
@@ -582,4 +585,37 @@ video{
     background-color: #0A50C9;
     border-color: #3569bb;
     color: black;
+}
+/*=======================================================================================================
+=                                      bordes                                                  =
+========================================================================================================*/
+#cont1{
+    height: auto; width: auto;padding: 40px 0;margin-right: 12%;margin-left: 12%;
+}
+#cont1-2{
+    height: auto;width: auto;
+}
+#cont1-3{
+    height: auto; width: auto;padding: 40px 0;margin-right: 12%;margin-left: 12%;
+}
+#cont1-4{
+    height: auto;width: auto;
+}
+#cont1-5{
+     height: auto; width: auto;padding: 40px 0;margin-right: 12%;margin-left: 12%;
+}
+.apoyFilesContainer{
+     height: auto; width: auto;padding: 40px 0;margin-right: 12%;margin-left: 12%;
+}
+.container{
+    height: auto;width: auto;
+}
+.well{
+     height: auto; width: auto;padding: 40px 0;margin-right: 12%;margin-left: 12%;
+}
+.panel-primary{
+    margin-right: 12%;margin-left: 12%;
+}
+.reseñaHistorica{
+   margin-right: 12%;margin-left: 12%;
 }

@@ -24,16 +24,19 @@
 		<!--======================================== Logo(Nombre INS) ========================================-->
 		<div class="full-reset logo">
 			<span class="hidden-lg hidden-md" id="codyeduHeadS">CODYEDU</span>
-			<span class="hidden-xs hidden-sm" ID="codyeduHead">CODYEDU</span>
+			<a href="index.html" id="navIcon">
+				<span class="hidden-xs hidden-sm" ID="codyeduHead" style="color: #ffffff">
+				<img src="assets/img/logoCodSolo.png" alt="Logo" style="height: 80%; padding-bottom: 2px">
+				CODYEDU</span>
+			</a>
 		</div>
 		<!--======================================== Links de navegación ========================================-->
-		<nav class="full-reset navigation">
+		<nav class="full-reset navigation" id="navHead">
 			<ul class="full-reset list-unstyled">
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="nosotros.html">Nosotros</a></li>
-				<li><a href="educacion.html">Educacion</a></li>
-				<li><a href="actividades.html">Actividades</a></li>
-				<li><a href="sesion.html">Sesion</a></li>
+				<li><a class="navList" href="home.html">Inicio</a></li>
+				<li><a class="navList" href="educacion.html">Educacion</a></li>
+				<li><a class="navList"  href="actividades.html">Actividades</a></li>
+				<li><a class="navList" href="sesion.html">Sesion</a></li>
 				<!-- <li><a href="galeria.html">Cerrar sesion</a></li> -->
 				<!--<li><a href="#" class="btm-mega-menu">Más &nbsp;<i class="fa fa-caret-down"></i></a></li>-->
 			</ul>
@@ -76,8 +79,8 @@
 	</header>
 	<!--======================================== Contenido de la pagina ========================================-->
 	<section class="full-reset" style="background-color: #fff; padding: 20px 0;">
-		<div class="container">
-			<div class="row">
+		<div class="container" >
+			<div class="row" >
 				<section class="col-xs-12 col-sm-8 col-md-9 info-section-ins">
 					<!--======================================== Mision y vision ========================================-->
 					<article class="full-reset" id="mision-vision">
@@ -85,7 +88,7 @@
 						  <h1><i class="fa fa-graduation-cap"></i> &nbsp; ¿Quienes somos?</h1>
 						</div>
 						<br><br>
-						<div class="panel panel-primary">
+						<div class="panel panel-primary ">
 						  <div class="panel-heading lead text-center titles">Nosotros</div>
 						  <div class="panel-body">
 						    <p class="lead text-justify">	
@@ -108,6 +111,7 @@
 						<div class="page-header" style="margin-bottom:50px;">
 						  <h1><i class="fa fa-university"></i> &nbsp; Reseña histórica</h1>
 						</div>
+						<div class="reseñaHistorica">
 						<h3 class="text-center titles text-uppercase">Antesedentes</h3>
 						<p class="lead text-justify">
 							Hasta ahora solo hemos desarrollado paginas para ambitos escolares...
@@ -123,13 +127,14 @@
 						<h3 class="text-center titles text-uppercase">Referencias</h3>
 						<p class="lead text-justify">
 							Contamos con la educadora ... que nos apoyo en la creacion de las actividades...
-						</p>
+						</p></div>
 					</article>
 					<!--======================================== Ubicacion geografica ========================================-->
 					<article class="full-reset" id="ubicacion-ins">
 						<div class="page-header">
 						  <h1><i class="fa fa-map"></i> &nbsp; Ubicación geográfica</h1>
 						</div>
+						<div class="reseñaHistorica">
 						<p class="lead text-justify">
 							Debido a la situacion de contingencia actual no contamos con una ubicacion geografica real, pero como referencia se puede usar el "CECyT 9".
 							<br><br>
@@ -144,6 +149,7 @@
 						<h3 class="text-center titles"><i class="fa fa-map-marker"></i> &nbsp; Mapa de localización</h3>
 						<br>
 						<div id="mapa-ins"></div>
+						</div>
 					</article>
 				</section>
 				<!--======================================== Navegacion fija lateral derecha ========================================-->
@@ -168,7 +174,8 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-4" style="text-align: center;">
 						<h4 class="titles subtitles-footer">Tambien puedes visitar:</h4>
-						<ul class="list-unstyled links-footer" >
+						<ul class="list-unstyled links-footer">
+							<li><a href="nosotros.html"><i class="fa fa-users"></i> &nbsp; Sobre nosotros</a></li>
 							<li style="text-align: center"><a href="https://dionisiosatiro.github.io/4IV8_Proyecto_Aula_Equipo6_Codyrep/" class="open-link-newTab"><i class="fa fa-github"></i> &nbsp; CODYREP</a></li>
 						</ul>
 					</div>

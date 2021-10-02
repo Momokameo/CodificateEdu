@@ -24,16 +24,19 @@
     <!--======================================== Logo(Nombre INS) ========================================-->
     <div class="full-reset logo">
         <span class="hidden-lg hidden-md" id="codyeduHeadS">CODYEDU</span>
-        <span class="hidden-xs hidden-sm" ID="codyeduHead">CODYEDU</span>
+        <a href="index.html" id="navIcon">
+				<span class="hidden-xs hidden-sm" ID="codyeduHead" style="color: #ffffff">
+				<img src="assets/img/logoCodSolo.png" alt="Logo" style="height: 80%; padding-bottom: 2px">
+				CODYEDU</span>
+        </a>
     </div>
     <!--======================================== Links de navegación ========================================-->
-    <nav class="full-reset navigation">
+    <nav class="full-reset navigation" id="navHead">
         <ul class="full-reset list-unstyled">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="educacion.html">Educacion</a></li>
-            <li><a href="actividades.html">Actividades</a></li>
-            <li><a href="sesion.html">Sesion</a></li>
+            <li><a class="navList" href="home.html">Inicio</a></li>
+            <li><a class="navList" href="educacion.html">Educacion</a></li>
+            <li><a class="navList"  href="actividades.html">Actividades</a></li>
+            <li><a class="navList" href="sesion.html">Sesion</a></li>
             <!-- <li><a href="galeria.html">Cerrar sesion</a></li> -->
             <!--<li><a href="#" class="btm-mega-menu">Más &nbsp;<i class="fa fa-caret-down"></i></a></li>-->
         </ul>
@@ -75,35 +78,48 @@
     <a href="#" class=" hidden-sm hidden-md hidden-lg pull-right button-menu-mobile show-close-menu-m"><i class="fa fa-ellipsis-v"></i></a>
 </header>
 <!--======================================== Contenido de la pagina ========================================-->
-<section class="full-reset section-gallery-ins">
-    <!--======================================== Login ========================================-->
-    <article class="container">
-        <h2 class="text-center"><i class="fa fa-user"></i> &nbsp; Registro</h2>
-        <div class="row">
-            <!--======================================== Espacio ========================================-->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-            </div>
-            <!--======================================== Evento 2========================================-->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="tile-gallery">
-                    <!--<img src="assets/gallery/default.png" alt="Default">-->
-                    <p class="text-center"><strong>Nombre completo:</strong></p>
 
-                    <form id="formularioLogin" action="enviado" method="post" class="text-center">
-                        <label><input type="text" name="nombreIN" class="login" ></label>
-                        <p class="text-center"><strong>Correo:</strong></p>
-                        <label><input type="text" name="correoIN" class="login"></label><br>
-                        <p class="text-center"><strong>Usuario:</strong></p>
-                        <label><input type="text" name="usuarioIN" class="login"></label><br>
-                        <p class="text-center"><strong>Contraseña:</strong></p>
-                        <label><input type="text" name="contraIN" class="login"></label><br>
-                        <button class="formularioBTN" type="submit" style="margin-top: 5px; margin-bottom: 5px"><i class="fa fa-sign-in "></i> &nbsp; Registrarme</button>
-                    </form>
-                    <div class="divider-general"></div>
-                    <p class="text-center"><strong>¿Ya estas registrado?</strong></p>
-                    <p class="text-center"><strong><a href="sesion.html">Inicia sesion!</a></strong></p>
+<section class="full-reset font-cover" style="background-image: url(assets/img/font-index3.jpg);">
+    <div class="full-reset" style="height: 100%; background-color: rgba(255,255,255,.6);">
+        <!--<h1 class="text-center titles">Codificate</h1>-->
+        <div class="row" style="margin: 0 auto;padding: 60px 0;">
+            <figure class="col-md-7" style="height: 100%;padding-left: 15%;padding-right: 15%;padding-top: 5%">
+                <img src="assets/img/logoCod2.png" alt="Logo" class="img-responsive" id="logoIndex" style="height: 100%">
+            </figure>
+            <div class="col-md-5" style="height: 100%; text-align: center">
+                
+                <div style="padding-right: 10%;">
+                    
+                    <div class="tile-gallery" style="width: 90%;background-color: rgba(255,255,255,0.6)">
+                        <!--<img src="assets/gallery/default.png" alt="Default">-->
+                        <h2 class="text-center"><i class="fa fa-user"></i> &nbsp; Registro</h2><br>
+                        <p class="text-center"><strong>Nombre completo:</strong></p>
+                        <form id="formularioLogin" action="enviado" method="post" class="text-center">
+                            <label><input type="text" name="nombreIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label>
+                            <p class="text-center"><strong>Correo:</strong></p>
+                            <label><input type="text" name="correoIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
+                            <p class="text-center"><strong>Usuario:</strong></p>
+                            <label><input type="text" name="usuarioIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
+                            <p class="text-center"><strong>Contraseña:</strong></p>
+                            <label><input type="text" name="contraIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
+                            <button class="formularioBTN" type="submit" style="margin-top: 15px; margin-bottom: 15px;
+                            background-color: #0A50C9; border: #0A50C9; border-radius: 10px;color: white; 
+					        padding: 10px 30px"><i class="fa fa-sign-in "></i> &nbsp; Registrarme</button>
+                        </form>
+                        <div class="divider-general"></div>
+                        <p class="text-center" style="padding-top: 10px"><strong>¿Ya estas registrado?</strong></p>
+                        <p class="text-center"><strong><a href="sesion.html">Inicia sesion!</a></strong></p>
+                    </div>
                 </div>
-            </div></div></article></section>
+                
+            </div>
+        </div>
+
+        <!--<p class="lead text-center">
+            "Corrigiendo con diversion"
+        </p>-->
+    </div>
+</section>
             <!--======================================== Pie de pagina ========================================-->
 <footer class="full-reset footer">
     <div class="full-reset" style="padding: 15px 0;">
@@ -111,7 +127,8 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-4" style="text-align: center;">
                     <h4 class="titles subtitles-footer">Tambien puedes visitar:</h4>
-                    <ul class="list-unstyled links-footer" >
+                    <ul class="list-unstyled links-footer">
+                        <li><a href="nosotros.html"><i class="fa fa-users"></i> &nbsp; Sobre nosotros</a></li>
                         <li style="text-align: center"><a href="https://dionisiosatiro.github.io/4IV8_Proyecto_Aula_Equipo6_Codyrep/" class="open-link-newTab"><i class="fa fa-github"></i> &nbsp; CODYREP</a></li>
                     </ul>
                 </div>
