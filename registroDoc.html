@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Codificate</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -38,29 +38,49 @@
         </ul>
     </nav>
     <!--======================================== Boton menu mobil ========================================-->
-    <a  href="#" class=" hidden-sm hidden-md hidden-lg pull-right button-menu-mobile show-close-menu-m"><i class="fa fa-ellipsis-v" style="color: #0A50C9"></i></a>
+    <a href="#" class=" hidden-sm hidden-md hidden-lg pull-right button-menu-mobile show-close-menu-m"><i class="fa fa-ellipsis-v"></i></a>
 </header>
-<!--======================================== Contenido ========================================-->
-<section class="full-reset font-cover">
+<!--======================================== Contenido de la pagina ========================================-->
+
+<section class="full-reset font-cover" style="background-image: url(assets/img/font-index3.jpg);">
     <div class="full-reset" style="height: 100%; background-color: rgba(255,255,255,.6);">
         <!--<h1 class="text-center titles">Codificate</h1>-->
-        <div class="row" style="margin: 0 auto;padding: 15px 0">
-            <h1 class="text-center"><b>Usted desea registrarse como:</b></h1><br>
-            <figure class="col-md-6" style="text-align: right;height: 70%;padding-left: 15%;padding-top: 2%;">
-                <a href="registroDoc.html">
-                    <img src="assets/img/docenteBTN.png" alt="Logo" class="img-responsive" id="logoIndex" style="height: 100%">
-                </a>
+        <div class="row" style="margin: 0 auto;padding: 60px 0;">
+            <figure class="col-md-7" style="height: 100%;padding-left: 15%;padding-right: 15%;padding-top: 5%">
+                <img src="assets/img/logoCod2.png" alt="Logo" class="img-responsive" id="logoIndex" style="height: 100%">
             </figure>
-            <figure class="col-md-6" style="text-align: left;height: 70%;padding-right: 15%;padding-top: 2%">
-                <a href="registro.html">
-                    <img src="assets/img/estudianteBTN.png" alt="Logo" class="img-responsive"  style="height: 100%">
-                </a>
-            </figure>
+            <div class="col-md-5" style="height: 100%; text-align: center">
+
+                <div style="">
+
+                    <div class="tile-gallery" style="width: 90%;background-color: rgba(255,255,255,0.6)">
+                        <!--<img src="assets/gallery/default.png" alt="Default">-->
+                        <h2 class="text-center"><i class="fa fa-user"></i> &nbsp; Registro de docente</h2><br>
+                        <p class="text-center"><strong>Nombre completo:</strong></p>
+                        <form id="formularioLogin" action="enviado" method="post" class="text-center">
+                            <label><input type="text" name="nombreIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label>
+                            <p class="text-center"><strong>Correo:</strong></p>
+                            <label><input type="text" name="correoIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
+                            <p class="text-center"><strong>Usuario:</strong></p>
+                            <label><input type="text" name="pinIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
+                            <p class="text-center"><strong>Pin de docente:</strong></p>
+                            <label><input type="text" name="usuarioIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
+                            <p class="text-center"><strong>Contraseña:</strong></p>
+                            <label><input type="text" name="contraIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
+                            <button class="formularioBTN" type="submit" style="margin-top: 15px; margin-bottom: 15px;
+                            background-color: #0A50C9; border: #0A50C9; border-radius: 10px;color: white; 
+					        padding: 10px 30px"><i class="fa fa-sign-in "></i> &nbsp; Registrarme</button>
+                        </form>
+                        <div class="divider-general"></div>
+                        <p class="text-center" style="padding-top: 10px"><strong>¿Ya estas registrado?</strong></p>
+                        <p class="text-center"><strong><a href="sesion.html">Inicia sesion!</a></strong></p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </section>
-<div class="divider-general"></div>
-
 <!--======================================== Pie de pagina ========================================-->
 <footer class="full-reset footer">
     <div class="full-reset" style="padding: 15px 0;">
