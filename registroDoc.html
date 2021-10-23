@@ -57,20 +57,21 @@
                         <!--<img src="assets/gallery/default.png" alt="Default">-->
                         <h2 class="text-center"><i class="fa fa-user"></i> &nbsp; Registro de docente</h2><br>
                         <p class="text-center"><strong>Nombre completo:</strong></p>
-                        <form id="formularioLogin" action="enviado" method="post" class="text-center">
-                            <label><input type="text" name="nombreIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label>
+                        <form id="formularioSignupDoc" action="" method="post" class="text-center">
+                            <label><input type="text" id="nombreIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label>
                             <p class="text-center"><strong>Correo:</strong></p>
-                            <label><input type="text" name="correoIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
+                            <label><input type="text" id="correoIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
                             <p class="text-center"><strong>Usuario:</strong></p>
-                            <label><input type="text" name="pinIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
+                            <label><input type="text" id="pinIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
                             <p class="text-center"><strong>Pin de docente:</strong></p>
-                            <label><input type="text" name="usuarioIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
+                            <label><input type="text" id="usuarioIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
                             <p class="text-center"><strong>Contraseña:</strong></p>
-                            <label><input type="text" name="contraIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
+                            <label><input type="text" id="contraIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
                             <button class="formularioBTN" type="submit" style="margin-top: 15px; margin-bottom: 15px;
                             background-color: #0A50C9; border: #0A50C9; border-radius: 10px;color: white; 
 					        padding: 10px 30px"><i class="fa fa-sign-in "></i> &nbsp; Registrarme</button>
                         </form>
+                        <p class="warnings" id="warnings"></p>
                         <div class="divider-general"></div>
                         <p class="text-center" style="padding-top: 10px"><strong>¿Ya estas registrado?</strong></p>
                         <p class="text-center"><strong><a href="sesion.html">Inicia sesion!</a></strong></p>
@@ -112,5 +113,48 @@
         </div>
     </div>
 </footer>
+<!-- VALIDACION -->
+<script>
+    const usuario = document.getElementById("usuarioIN");
+    const contra = document.getElementById("contraIN");
+    const formSignupDoc = document.getElementById("formularioSignupDoc");
+    const parrafo = document.getElementById("warnings");
+    const nombre = document.getElementById("nombreIN");
+    const correo = document.getElementById("correoIN");
+    const pin = document.getElementById("pinIN");
+
+    formSignupDoc.addEventListener("submit", e=>{
+        e.preventDefault()
+        let warnings = ""
+        let entrar = false
+        let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
+        parrafo.innerHTML = ""
+        if(nombre.value.length <6){
+            warnings += `El nombre no es valido <br>`
+            entrar = true
+        }
+        if(!regexEmail.test(correo.value)){
+            warnings += `El email no es valido <br>`
+            entrar = true
+        }
+        if(usuario.value.length <6){
+            warnings += `El usuario no es valido <br>`
+            entrar = true
+        }
+        if(pin.value.length <4){
+            warnings += `El pin no es valido <br>`
+            entrar = true
+        }
+        if(contra.value.length < 8){
+            warnings += `La contraseña no es valida`
+            entrar = true
+        }
+        if(entrar){
+            parrafo.innerHTML = warnings
+        }else{
+            parrafo.innerHTML = "Enviado"
+        }
+    })
+</script>
 </body>
 </html>

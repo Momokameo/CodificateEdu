@@ -55,14 +55,16 @@
 						<div class="tile-gallery" style="width: 90%;background-color: rgba(255,255,255,0.6)">
 							<!--<img src="assets/gallery/default.png" alt="Default">-->
 							<h2 class="text-center"><i class="fa fa-user"></i> &nbsp; Iniciar Sesion</h2><br>
-							<form id="formularioLogin" action="enviado" method="post" class="text-center">
+							
+							<form id="formularioLogin" action="" method="POST" class="text-center">
 								<p class="text-center"><strong>Usuario:</strong></p>
-								<label><input type="text" name="usuarioIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
+								<label><input type="text" id="usuarioIN" class="login"  style="border-color: #0A50C9; border-radius: 10px"></label><br>
 								<p class="text-center"><strong>Contraseña:</strong></p>
-								<label><input type="text" name="contraIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
+								<label><input type="password" id="contraIN" class="login" style="border-color: #0A50C9; border-radius: 10px"></label><br>
 								<button class="formularioBTN" type="submit" style="margin-top: 15px; margin-bottom: 15px;
                             background-color: #0A50C9; border: #0A50C9; border-radius: 10px;color: white; 
 					        padding: 10px 30px"><i class="fa fa-sign-in "></i> &nbsp; Ingresar</button>
+							<p class="warnings" id="warnings"></p>
 							</form>
 							<div class="divider-general"></div>
 							<p class="text-center" style="padding-top: 10px"><strong>¿No estas registrado?</strong></p>
@@ -105,5 +107,32 @@
 			</div>
 		</div>
 	</footer>
+	<!-- VALIDACION -->
+	<script>
+		const usuario = document.getElementById("usuarioIN");
+		const contra = document.getElementById("contraIN");
+		const formLogin = document.getElementById("formularioLogin");
+		const parrafo = document.getElementById("warnings");
+		
+		formLogin.addEventListener("submit", e=>{
+			e.preventDefault()
+			let warnings = ""
+			let entrar = false
+			parrafo.innerHTML = ""
+			if(usuario.value.length <6){
+				warnings += `El usuario no es valido <br>`
+				entrar = true
+			}
+			if(contra.value.length < 8){
+				warnings += `La contraseña no es valida`
+				entrar = true
+			}
+			if(entrar){
+				parrafo.innerHTML = warnings
+			}else{
+				parrafo.innerHTML = "Enviado"
+			}
+		})
+	</script>
 </body>
 </html>
